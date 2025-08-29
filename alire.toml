@@ -1,15 +1,21 @@
-name = "doppler_effect"
+name = "gui_doppler_plane_1"
 description = "Moving airplane causes Stereo Sound Doppler effect."
-version = "0.1.0-dev"
+version = "0.2.0-dev"
 
 authors = ["moriyasum"]
 maintainers = ["Manuel Gomez <mgrojo@gmail.com>"]
 maintainers-logins = ["mgrojo"]
+executables = ["gui_doppler_plane_1"]
 
-executables = ["main"]
+licenses = "MIT OR Apache-2.0 WITH LLVM-exception"
 [[depends-on]]
-gtkada = "^21.0.0"
+gtkada = "^25.0.1"
 [[depends-on]]
 openal_ada = "^1.1.1-dev"
+
+website = ""
+tags = []
 [[pins]]
+openal_ada = { path='../../coreland-openal-ada' }
 openal_ada = { path='../../io7m/coreland-openal-ada' }
+
