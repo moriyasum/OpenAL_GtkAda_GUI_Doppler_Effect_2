@@ -1,4 +1,4 @@
-# OpenAL_GtkAda_GUI_Doppler_Effect_2
+# OpenAL_GtkAda_GUI_Doppler_Effect_Plane_1
 
 This program is a GtkAda application that demonstrates the Doppler effect using OpenAL-GtkAda.
 
@@ -27,5 +27,5 @@ Audio source file: Mono, 44.1kHz, 16bit, 5sec WAV file Looping.
 
 <img width="1100" height="750" alt="gui_doppler_plane_1_screenshot" src="https://github.com/user-attachments/assets/659bc34e-b787-44db-a46f-28dd6257ad90" />
 
-Detail: https://n7sd.com/ada1-2/openal_gtkada_gui_doppler_effect_2/
+Detail: https://n7sd.com/ada1-2/openal_gtkada_gui_doppler_effect_plane_1/
 
