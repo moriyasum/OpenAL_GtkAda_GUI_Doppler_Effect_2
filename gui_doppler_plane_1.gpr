@@ -1,0 +1,38 @@
+with "config/gui_doppler_plane_1_config.gpr";
+
+project Gui_Doppler_Plane_1 is
+
+   --   for Library_Name use "Gui_Doppler_Plane_1";
+   --   for Library_Version use Project'Library_Name & ".so." & Gui_Doppler_Plane_1_Config.Crate_Version;
+
+   for Source_Dirs use ("src", "config", "../../../../../usr/local/include/coreland/openal-ada");
+   for Object_Dir use "obj/" & Gui_Doppler_Plane_1_Config.Build_Profile;
+   for Create_Missing_Dirs use "True";
+   for Library_Dir use "lib";
+   for Exec_Dir use "bin";
+   for Source_List_File use "sourcefiles.txt";
+   for Main use ("gui_doppler_plane_1.adb");
+
+   --   type Library_Type_Type is ("relocatable", "static", "static-pic");
+   --   Library_Type : Library_Type_Type :=
+   --     external ("GUI_DOPPLER_PLANE_1_LIBRARY_TYPE", external ("LIBRARY_TYPE", "static"));
+   --   for Library_Kind use Library_Type;
+
+   package Compiler is
+      for Default_Switches ("ada") use Gui_Doppler_Plane_1_Config.Ada_Compiler_Switches;
+   end Compiler;
+
+   package Binder is
+      for Switches ("Ada") use ("-Es"); --  Symbolic traceback
+   end Binder;
+
+   package Install is
+      for Artifacts (".") use ("share");
+   end Install;
+
+   package Linker is
+      for Switches ("ada") use ("-lopenal", "-lalut");
+   end Linker;
+
+end Gui_Doppler_Plane_1;
+
